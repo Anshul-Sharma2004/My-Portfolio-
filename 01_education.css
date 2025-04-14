@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f0f0;
+    display: flex;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 220px;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc);
+    color: white;
+    padding: 40px 20px;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+  
+  .sidebar h2 {
+    margin: 0;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  /* Main Content */
+  .edu {
+    margin-left: 240px; /* to shift content next to sidebar */
+    padding: 30px;
+    width: calc(100% - 240px);
+  }
+  
+  .edu > div {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edu h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .edu h2,
+  .edu h4 {
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .edu span {
+    font-weight: 600;
+    color: #000;
+  }
+  
+  a.btn {
+    text-decoration: none;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    padding: 6px 12px;
+    color: white;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  a.btn:hover {
+    box-shadow: 0 4px 12px rgba(221, 36, 118, 0.4);
+    transform: scale(1.05);
+  }
+  body{
+    
+    background: linear-gradient(to bottom, #283c86, #c6c5d6);
+    
+}  

@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #283c86, #c6c5d6);
+}
+
+/* Structure */
+.main-container {
+    display: flex;
+}
+
+/* Content stacking vertically */
+.content {
+    margin-left: 250px; /* if sidebar exists */
+    padding: 40px;
+    width: calc(100% - 250px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+/* Base Card Style */
+.card {
+    border-radius: 20px;
+    padding: 30px;
+    color: #fff;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, max-height 0.4s ease, padding 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+    max-height: 200px;
+    position: relative;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: scale(1.03) rotateX(3deg) rotateY(2deg);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+/* Card Expand on Click */
+.card.expanded {
+    max-height: 1000px;
+    padding: 40px;
+}
+
+/* Heading Style with Emoji */
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.card h2::before {
+    content: '💡';
+    margin-right: 10px;
+}
+
+/* List */
+.card ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.card ul li {
+    font-size: 16px;
+    line-height: 1.8;
+    list-style-type: disc;
+}
+
+/* Unique Gradients */
+.card.linux {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.card.frontend {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+}
+
+.card.backend {
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+}
+
+.card.database {
+    background: linear-gradient(135deg, #654ea3, #eaafc8);
+}

@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left:100px;
+    padding: 0;
+    background: linear-gradient(to bottom, #283c86, #c6c5d6);
+    color: #1e293b;
+    display: flex;
+}
+
+
+
+/* Main project content shifted to right */
+.project {
+    margin-left: 270px;
+    max-width: 1000px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Existing project styles */
+.project h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #0f172a;
+    border-bottom: 2px solid #0f766e;
+    padding-bottom: 8px;
+}
+
+.project .prop ol {
+    padding-left: 20px;
+}
+
+.project .prop li {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.project h4 {
+    font-size: 20px;
+    color: #0f766e;
+    margin-bottom: 10px;
+}
+
+.project ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.project ul ul {
+    list-style-type: circle;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.project b {
+    color: #1d4ed8;
+}
+
+.project i {
+    color: #617fa9;
+}
+
+.project li:hover {
+    color: #0f766e;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .project {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .project h3 {
+        font-size: 22px;
+    }
+
+    .project h4 {
+        font-size: 18px;
+    }
+}
+.roman-list {
+    list-style-type: upper-roman;
+    padding-left: 20px;
+  }
+
+  .note {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 15px 20px;
+    border-left: 6px solid #ffeeba;
+    border-radius: 6px;
+    margin: 20px 0;
+    font-size: 16px;
+  }
+
+  .small-alphabet{
+    list-style-type: lower-alpha;
+    padding-left: 20px;
+  }
+  
+  

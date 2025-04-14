@@ -1,0 +1,169 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #667eea, #764ba2); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.login-container {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0); 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-container.show-form {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(145deg, #e0e0e0, #ffffff); 
+    border-radius: 20px;
+    z-index: -1;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    transform: translate(5px, 5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container:hover::before {
+    transform: translate(10px, 10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+.login-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+}
+
+
+.form-group input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea, #764ba2); /* Gradient for button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.form-group input[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(102, 126, 234, 0.3);
+}
+
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* REMOVE custom styles from form */
+form {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    background: transparent;
+    box-shadow: none;
+    position: relative;
+}
+
+/* LOGIN CONTAINER stays same */
+.login-container {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    position: relative; /* ✅ Needed for absolute .signup */
+    overflow: hidden;
+}
+
+.login-container.show-form {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Register Button Styling */
+.signup {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 14px;
+    color: #fff;
+    background: linear-gradient(to right, #0066ff, #00ccff);
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.signup:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #0052cc, #00bfff);
+}

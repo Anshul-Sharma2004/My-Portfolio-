@@ -1,0 +1,95 @@
+/* Assuming sidebar is 250px wide */
+body {
+    margin-left: 250px; /* shift content right of sidebar */
+    padding: 50px;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #283c86, #c6c5d6);
+
+
+
+    color: #333;
+  }
+  
+  /* Paragraph styling */
+  p {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #222;
+  }
+  
+  /* Highlighted name */
+  span {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+  
+  
+  
+  /* Optional glowing animation */
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #00c6ff;
+    }
+    to {
+      text-shadow: 0 0 20px #0072ff;
+    }
+  }
+
+  #about {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .about-image {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    perspective: 1000px; /* Enables 3D effect */
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  .about-image:hover img {
+    transform: rotateY(360deg);
+  }
+  
+  
+  .about-content {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .about-content h2 {
+    font-size: 32px;
+    color: #2f79d3;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  
+  

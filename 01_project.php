@@ -17,7 +17,7 @@ include './01_index.php'
     <h3>Key Projects:</h3>
         <div class="prop">
             <ol>
-                //1st Project
+                
                 <li>
                 <h4>Library Management System</h4>
                 <ul>
@@ -41,7 +41,7 @@ include './01_index.php'
                         Designed and managed multiple relational tables such as <b>Student, Faculty, Admin, BooksData, BookIssue (Faculty & Student), BookReturn (Faculty & Student), BookSubmit (Faculty & Student)</b> to support complete library workflows.
                     </li>
                     <li>
-                    <a href="https://github.com/Anshul-Sharma2004/database.git">PROJECT LINK:</a>
+                    Project available on GITHUB:<a href="https://github.com/Anshul-Sharma2004/database.git">PROJECT LINK:</a>
                     </li>
                     </ul>
 
@@ -50,7 +50,7 @@ include './01_index.php'
                 </ul>
                 </li>
 
-                //2nd Project
+                <hr>
 
                 <li>
                 <h4>C Program Output in Browser</h4>
@@ -60,11 +60,11 @@ include './01_index.php'
                     <li><b>Tools:</b> VS Code, Apache Server (XAMPP), Localhost</li>
                     <li><b>Server:</b> Apache (XAMPP)</li>
                     <li><b>Localhost:</b> Loopback interface for local development & testing</li>
-                    <li><a href="https://github.com/Anshul-Sharma2004/C-programming.git">PROJECT LINK:</a></li>
+                    <li> Project available on GITHUB:<a href="https://github.com/Anshul-Sharma2004/C-programming.git">PROJECT LINK:</a></li>
                 </ul>
                 </li>
 
-                //3rd Project
+                <hr>
 
                 <li>
                     <h4>Initialize Database In <b>LocalStorage</b> </h4>
@@ -98,7 +98,7 @@ include './01_index.php'
                                 </ol>
                             </li>
                             <li>
-                                 <a href="">PROJECT LINK:</a>
+                            Project available on GITHUB:<a href="">PROJECT LINK:</a>
                             </li>
                         </ul>
                         </ol>
@@ -111,7 +111,8 @@ include './01_index.php'
                     <strong>Note:</strong> This project uses LOCALSTORAGE for storing the data.
                     </div>
 
-                    //4th project
+                   <hr>
+                   
                     <li>
                         <h4>My Portfolio</h4>
                         <ul>
@@ -140,7 +141,7 @@ include './01_index.php'
                                             The login and registration pages include animation effects and responsive layouts for an enhanced user experience.
                                         </li>
                                         <li>
-                                        <a href="">PROJECT LINK:</a>
+                                            Project available on GITHUB: <a href="https://github.com/Anshul-Sharma2004/My-Portfolio-.git">PROJECT LINK:</a>
                                         </li>
                                     </ul>
                                 </li>

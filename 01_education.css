@@ -1,0 +1,157 @@
+/* Education Section Styles */
+:root {
+  --primary-color: #47e0ff; /* Matching your portfolio's red accent */
+  --secondary-color: #2f3542;
+  --text-color: #333;
+  --light-text: #666;
+  --bg-color: #f8f9fa;
+  --white: #ffffff;
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+
+/* Base Reset & Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Consistent with your portfolio */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 60px 20px;
+  margin-top: 40px;
+   font-family: 'Poppins', sans-serif;
+background: var(--bg-color) url('darkbackground.jpg') no-repeat center fixed;
+background-size: cover; /* or use 'contain' or specific dimensions */
+color: var(--text-color);
+line-height: 1.6;
+overflow-x: hidden;
+}
+
+/* Main education container */
+.edu {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Education card box */
+.edu > div {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  border-left: 4px solid var(--primary-color);
+}
+
+.edu > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Heading styles */
+.edu h1 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.edu h1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 50px;
+  height: 2px;
+  background: var(--primary-color);
+}
+
+.edu h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.edu h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: var(--light-text);
+  font-weight: 400;
+}
+
+/* Highlighted span */
+.edu span {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* Button / Certificate link */
+.btn {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: var(--transition);
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e84141;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 71, 87, 0.3);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  body {
+    padding: 40px 15px;
+  }
+  
+  .edu > div {
+    padding: 25px;
+  }
+
+  .edu h1 {
+    font-size: 22px;
+  }
+
+  .edu h2 {
+    font-size: 16px;
+  }
+
+  .edu h4 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .edu > div {
+    padding: 20px;
+  }
+  
+  .edu h1 {
+    font-size: 20px;
+  }
+  
+  .btn {
+    padding: 7px 15px;
+    font-size: 13px;
+  }
+}
